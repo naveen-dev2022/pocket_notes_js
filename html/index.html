@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <p>Pocket Notes</p>
+        <div>
+          <button onclick="openDeletePage()">DELETE ALL</button>
+          <button>NEW</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="mySidenav" class="sidenav">
+        <div class="notes-content">
+          <div class="new-note-heading">
+            <h3>NEW NOTE</h3>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+          </div>
+          <br />
+          <div>
+            <textarea placeholder="Notes Title" maxlength="100"></textarea>
+            <textarea placeholder="Add image URL"></textarea>
+            <textarea placeholder="Add Content here"></textarea>
+          </div>
+
+          <div class="choose-color">
+            <section>
+              <div class="color-group">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <div class="color-group">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <div class="color-group">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <div class="color-group">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+              <div class="color-group">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </div>
+            </section>
+
+            <button class="color-add-button">ADD</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="notes-list">
+
+        <!-- <div class="notes-item">
+           
+       </div> -->
+     
+      </div> 
+           
+    </main>
+
+    <div class="delet-all">
+        <div id="dialog">
+            <div class="new-note-heading">
+                <h3>DELETE NOTE</h3>
+                <span  class="closebtn" onclick="closeDeletePage()">
+                    &times; 
+                </span>
+              </div>
+              <p>Are you sure want to delete all note?</p>
+              <button class="delete-all-button">YES, DELETE</button>
+        </div>
+    </div>
+    
+    <div class="load-more">
+      <button>LOAD MORE</button>
+    </div>
+    <script
+      charset="utf-8"
+      type="text/javascript"
+      src="../javascript/index.js"
+    ></script>
+  </body>
+</html>
